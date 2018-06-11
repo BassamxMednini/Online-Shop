@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+
+
+
+/* Höhe muss bei der mobilen Ansicht auf ''auto'' umgestellt werden, da sonst das Menü sich nicht aufklappt */
+.navbar {
+    height: 50px;
+}
+
+
+.nav-item {
+    padding-left: 1rem;
+  }
+  
+.nav-link {
+    padding-top: 14px !important;
+    padding-bottom: 11px;
+    position: relative;
+    border-bottom: 3px solid transparent;
+}
+  
+.nav-link:hover {
+    border-bottom: 3px solid #417505 !important;
+}
+
+.d-block {
+    /* Prüfen ggf. max-height */
+    height: 400px !important;
+    object-fit: cover;
+}
+
+.navbar-nav li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+
+}
+
+.card {
+    width: 350px;
+    border-radius: 0;
+    border: none;
+    margin-top: 50px;
+}
+
+.card-img-top {
+    width: 350px;
+    height: 250px;
+    border-radius: 0;
+}
+
+.card-body {
+    height: 149px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color: #4A4A4A;
+}
+
+.card-one {
+    background-color: #F9E79F;
+}
+
+.card-two {
+    background-color: #D5DBDB;
+}
+
+.card-three {
+    background-color: #EDBB99;
+}
+
+.card-body a {
+    border-radius: 0;
+    border: 1px solid #4A4A4A;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #4A4A4A;
+    background-color: transparent;
+}
+
+.card-body a:hover {
+    background-color: #4A4A4A;
+    border: 1px solid #4A4A4A;
+}
+
+.card-title {
+    margin-top: 15px;
+}
+
+
+.img-thumbnail {
+    border: none;
+    border-radius: 0;
+    padding: 0px;
+}
+
+
+
+.bestell-btn {
+    position: absolute; 
+    top: 0; 
+    color: #f1f1f1; 
+    width: 350px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title-salat {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    border-top: 1px solid #fff;
+    color: #f1f1f1; 
+    width: 350px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.price-salat {
+    position: absolute; 
+    bottom: 0; 
+    color: #f1f1f1; 
+    width: 350px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+.img-container:hover .bestell-btn {
+    opacity: 1;
+}
+
+.img-container:hover .title-salat {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.img-container:hover .price-salat {
+    opacity: 1;
+    cursor: pointer;
+}
+
+img.img-thumbnail {
+    height: 260px;
+}
+
+.title-row {
+    margin-top: 1rem;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+hr {
+    margin-top: 0rem;
+} 
