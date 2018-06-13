@@ -169,3 +169,28 @@ img.img-thumbnail {
 hr {
     margin-top: 0rem;
 } 
+
+/* Searchbox */
+
+  
+  .search-container input[type=text] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #DADADA;
+    margin-top: 8px;
+    font-size: 17px;
+    width: 85%;
+  }
+
+  .search-container input:focus {
+    border: 1px solid #28a745;
+    outline: none !important;
+  }
+.search-container button {
+    padding: 6px 10px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    width: 14%;
+  }
+  
