@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
-
-
-
 /* Höhe muss bei der mobilen Ansicht auf ''auto'' umgestellt werden, da sonst das Menü sich nicht aufklappt */
 .navbar {
     height: 50px;
@@ -25,7 +22,7 @@
 }
 
 .d-block {
-    /* Prüfen ggf. max-height */
+    /* Check with max-height */
     height: 400px !important;
     object-fit: cover;
 }
