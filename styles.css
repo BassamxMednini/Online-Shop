@@ -3,6 +3,9 @@
 /* Höhe muss bei der mobilen Ansicht auf ''auto'' umgestellt werden, da sonst das Menü sich nicht aufklappt */
 .navbar {
     height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 
@@ -153,6 +156,7 @@
 
 img.img-thumbnail {
     height: 260px;
+    width: 360px;
 }
 
 .title-row {
