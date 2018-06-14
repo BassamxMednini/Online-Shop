@@ -1,12 +1,12 @@
 # Shopping Cart mit AngularJS
 
 ## Version 1.0
-Webseite größtenteils fertig aufgebaut.
+Webseite größtenteils fertig aufgebaut. Lediglich die 3 Icons auf der rechten Seite der Navigation sind noch nicht funktionsbereit.
 
 [Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Screenshot_1.png?raw=true)
 
 ## Version 1.1
-Such- und Loginbox hinzugefügt.
+Such- und Loginbox wurden hinzugefügt.
 
 [Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Searchbox.png?raw=true)<br>
 [Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Loginbox.png?raw=true)
@@ -24,3 +24,8 @@ AngularJS eingebunden und Warenkorb optimiert. Beim Wählen eines Menüs (über 
 Warenkorb-Icon enthält ein Badge, das die Anzahl aller ausgewählten Artikel anzeigt.
 
 [Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Screenshot_2.png?raw=true)
+
+## Version 1.6
+Warenkorb wurde nochmals optimiert. Animation wurde hinzugefügt.
+
+![Animation](https://github.com/BassamxMednini/Online-Shop/blob/master/images/add_article_cart.gif?raw=true)
