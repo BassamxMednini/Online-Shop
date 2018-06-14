@@ -3,7 +3,7 @@
 ## Version 1.0
 Webseite größtenteils fertig aufgebaut. Lediglich die 3 Icons auf der rechten Seite der Navigation sind noch nicht funktionsbereit.
 
-<img src="https://github.com/BassamxMednini/Online-Shop/blob/master/images/Screenshot_1.png?raw=true" width="300" height="150" />
+<img src="https://github.com/BassamxMednini/Online-Shop/blob/master/images/Screenshot1.png?raw=true" width="300" height="150" />
 
 ## Version 1.1
 Such- und Loginbox wurden hinzugefügt.
