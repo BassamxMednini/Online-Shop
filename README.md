@@ -8,7 +8,7 @@ Webseite größtenteils fertig aufgebaut. Lediglich die 3 Icons auf der rechten 
 ## Version 1.1
 Such- und Loginbox wurden hinzugefügt.
 
-<img src="https://github.com/BassamxMednini/Online-Shop/blob/master/images/Searchbox.png?raw=true" width="300" height="150" /><br>
+<img src="https://github.com/BassamxMednini/Online-Shop/blob/master/images/Searchbox.png?raw=true" width="300" height="150" />
 <img src="https://github.com/BassamxMednini/Online-Shop/blob/master/images/Loginbox.png?raw=true" width="300" height="150" />
 
 ## Version 1.2
