@@ -23,7 +23,7 @@ AngularJS eingebunden und Warenkorb optimiert. Beim Wählen eines Menüs (über 
 ## Version 1.5
 Warenkorb-Icon enthält ein Badge, das die Anzahl aller ausgewählten Artikel anzeigt.
 
-[Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Screenshot_2.png?raw=true)
+![Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Screenshot_2.png?raw=true)
 
 ## Version 1.6
 Warenkorb wurde nochmals optimiert. Animation wurde hinzugefügt.
