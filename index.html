@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="shopCart">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -48,8 +48,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal"><i class="far fa-user-circle"></i></a>
                 </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#shopCartModal"><i class="fas fa-shopping-cart"></i></a>
+                <li class="nav-item" ng-controller="CartCtrl" >
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#shopCartModal"><i class="fas fa-shopping-cart"></i><span class="badge badge-warning" ng-show="cart.getItems().length">{{cart.getItems().length}}</span></a>
                 </li>  
             </ul> 
         </div>
@@ -151,24 +151,12 @@
         <!-- Order (Pizza) -->
         <div class="title-row">Pizza</div>
         <hr>
-        <div class="row text-center">
-            <div class="col img-container">
+        <div class="row text-center" ng-controller="ArticlesCtrl">
+            <div class="col img-container" ng-repeat="article in articles">
               <img src="/images/cheese-circle-close-up-803290.jpg" alt="..." class="img-thumbnail">
-              <a href="#"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
-              <div class="title-salat">Pizza Margherita</div>
-              <div class="price-salat">8,00€</div>
-            </div>
-            <div class="col img-container">
-              <img src="/images/baked-beer-cheese-724216.jpg" alt="..." class="img-thumbnail">
-              <a href="#"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
-              <div class="title-salat">Pizza Salami</div>
-              <div class="price-salat">8,50€</div>
-            </div>
-            <div class="col img-container">
-              <img src="/images/beef-cheese-circle-262977.jpg" alt="..." class="img-thumbnail">
-              <a href="#"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
-              <div class="title-salat">Pizza Thunfisch</div>
-              <div class="price-salat">9,50€</div>
+              <a href="#" onclick="return false;" ng-click="cart.addArticle(article);"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
+              <div class="title-salat">{{ article.name }}</div>
+              <div class="price-salat">{{ article.price }}</div>
             </div>
         </div>
         <br>
@@ -227,7 +215,7 @@
         </div>
     </div>
     <!-- Shopping Cart -->
-    <div class="modal fade" id="shopCartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="shopCartModal" ng-controller="CartCtrl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -237,11 +225,22 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Your cart is empty.
+                    <div class="cart-check"ng-hide="cart.getItems().length">Your cart is empty.</div>
+                    <table ng-show="cart.getItems().length" class="table">
+                      <tr ng-repeat="item in cart.getItems() track by $index">
+                        <td>{{item.name}}</td>
+                        <td>{{item.price | currency}}</td>
+                      </tr>
+                      <tr>
+                        <td>{{cart.getItems().length}} Artikel</td>
+                        <td>{{cart.sum() | currency}}</td>
+                        <td></td>
+                      </tr>
+                    </table>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger mr-auto" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-warning" disabled>Checkout</button>
+                    <button type="button" class="btn btn-warning disabled-btn" disabled>Checkout</button>
                 </div>
             </div>
         </div>
@@ -252,9 +251,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <!-- Main JS -->
-    <script src="main.js"></script>
     <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- Main JS -->
+    <script src="main.js"></script>
 </body>
 </html>
