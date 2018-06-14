@@ -3,13 +3,13 @@
 ## Version 1.0
 Webseite größtenteils fertig aufgebaut. Lediglich die 3 Icons auf der rechten Seite der Navigation sind noch nicht funktionsbereit.
 
-[Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Screenshot_1.png?raw=true)
+<img src="https://github.com/BassamxMednini/Online-Shop/blob/master/images/Screenshot_1.png?raw=true" width="300" height="150" />
 
 ## Version 1.1
 Such- und Loginbox wurden hinzugefügt.
 
-[Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Searchbox.png?raw=true)<br>
-[Screenshot](https://github.com/BassamxMednini/Online-Shop/blob/master/images/Loginbox.png?raw=true)
+<img src="https://github.com/BassamxMednini/Online-Shop/blob/master/images/Searchbox.png?raw=true" width="300" height="150" /><br>
+<img src="https://github.com/BassamxMednini/Online-Shop/blob/master/images/Loginbox.png?raw=true" width="300" height="150" />
 
 ## Version 1.2
 Warenkorb hinzugefügt, kleinere Änderungen an der Webseite vorgenommen sowie Such- und Loginbox optimiert.
