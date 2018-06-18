@@ -130,7 +130,7 @@
         <hr>
         <div class="row text-center" ng-controller="ArticlesCtrl">
           <div class="col img-container" ng-repeat="article in articles|limitTo: -3">
-            <img src="/images/buffet-delicious-dinner-5928.jpg" alt="..." class="img-thumbnail">
+            <img ng-src="/images/{{ article.url }}" alt="..." class="img-thumbnail">
             <a href="#" onclick="return false;" ng-click="cart.addArticle(article);"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
             <div class="title-salat">{{ article.name }}</div>
             <div class="price-salat">{{ article.price }}€</div>
@@ -141,7 +141,7 @@
         <hr>
         <div class="row text-center" ng-controller="ArticlesCtrl">
             <div class="col img-container" ng-repeat="article in articles|limitTo:3">
-              <img src="/images/cheese-circle-close-up-803290.jpg" alt="..." class="img-thumbnail">
+              <img ng-src="/images/{{ article.url }}" alt="..." class="img-thumbnail">
               <a href="#" onclick="return false;" ng-click="cart.addArticle(article);"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
               <div class="title-salat">{{ article.name }}</div>
               <div class="price-salat">{{ article.price }}€</div>
@@ -217,11 +217,11 @@
                     <table ng-show="cart.getItems().length" class="table">
                       <tr ng-repeat="item in cart.getItems() track by $index">
                         <td>{{item.name}}</td>
-                        <td>{{item.price | currency}}</td>
+                        <td>{{item.price | number:2 }}€</td>
                       </tr>
                       <tr>
-                        <td>{{cart.getItems().length}} Artikel</td>
-                        <td>{{cart.sum() | currency}}</td>
+                        <td>Article: {{cart.getItems().length}}</td>
+                        <td>{{cart.sum() | number:2 }}€</td>
                         <td></td>
                       </tr>
                     </table>
