@@ -213,18 +213,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="cart-check"ng-hide="cart.getItems().length">Your cart is empty.</div>
-                    <table ng-show="cart.getItems().length" class="table">
-                      <tr ng-repeat="item in cart.getItems() track by $index">
-                        <td>{{item.name}}</td>
-                        <td>{{item.price | number:2 }}€</td>
-                      </tr>
-                      <tr>
-                        <td>Article: {{cart.getItems().length}}</td>
-                        <td>{{cart.sum() | number:2 }}€</td>
-                        <td></td>
-                      </tr>
-                    </table>
+                    <div class="cart-check" ng-hide="cart.getItems().length">Your cart is empty.</div>
+                    <div class="card-shop" style="width: 29rem;" ng-show="cart.getItems().length">
+                        <div class="card-body-shop"ng-repeat="item in cart.getItems() track by $index">
+                            <img ng-src="/images/{{ item.url }}" alt="..." class="img-shopCart">
+                            <h5 class="card-title-shop">{{item.name}}</h5>
+                            <p class="card-text-shop"><em>Lorem ipsum dolor sit amet, consetetur sadipscing.  sed diam nonumy eirmod tempor invidunt.</em></p>
+                            <p class="card-price-shop">Preis: <strong>{{item.price | number:2 }}€</strong></p>
+                        </div>
+                    </div>
+                    <br ng-show="cart.getItems().length">
+                    <div ng-show="cart.getItems().length" class="alert alert-warning" role="alert"><strong>{{cart.getItems().length}}</strong> Artikel im Einkaufswagen. Gesamtpreis: <strong>{{cart.sum() | number:2 }}€</strong>.</div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger mr-auto" data-dismiss="modal">Close</button>
@@ -233,7 +232,6 @@
             </div>
         </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
