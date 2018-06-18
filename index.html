@@ -13,7 +13,7 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="/styles.css">
-    <title>Hello, world!</title>
+    <title>Shopping Cart</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -128,35 +128,23 @@
         <!-- Order (Salat) -->
         <div class="title-row">Salat</div>
         <hr>
-        <div class="row text-center">
-          <div class="col img-container">
+        <div class="row text-center" ng-controller="ArticlesCtrl">
+          <div class="col img-container" ng-repeat="article in articles|limitTo: -3">
             <img src="/images/buffet-delicious-dinner-5928.jpg" alt="..." class="img-thumbnail">
-            <a href="#"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
-            <div class="title-salat">Gemischter Salat</div>
-            <div class="price-salat">3,50€</div>
-          </div>
-          <div class="col img-container">
-            <img src="/images/appetizer-bowl-close-up-396132.jpg" alt="..." class="img-thumbnail">
-            <a href="#"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
-            <div class="title-salat">Salat mit Käse</div>
-            <div class="price-salat">4,50€</div>
-          </div>
-          <div class="col img-container">
-            <img src="/images/buffet-chicken-delicious-5916.jpg" alt="..." class="img-thumbnail">
-            <a href="#"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
-            <div class="title-salat">Salat mit Dressing</div>
-            <div class="price-salat">5,00€</div>
+            <a href="#" onclick="return false;" ng-click="cart.addArticle(article);"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
+            <div class="title-salat">{{ article.name }}</div>
+            <div class="price-salat">{{ article.price }}€</div>
           </div>
         </div>
         <!-- Order (Pizza) -->
         <div class="title-row">Pizza</div>
         <hr>
         <div class="row text-center" ng-controller="ArticlesCtrl">
-            <div class="col img-container" ng-repeat="article in articles">
+            <div class="col img-container" ng-repeat="article in articles|limitTo:3">
               <img src="/images/cheese-circle-close-up-803290.jpg" alt="..." class="img-thumbnail">
               <a href="#" onclick="return false;" ng-click="cart.addArticle(article);"><div class="bestell-btn"><i class="far fa-heart"></i></div></a>
               <div class="title-salat">{{ article.name }}</div>
-              <div class="price-salat">{{ article.price }}</div>
+              <div class="price-salat">{{ article.price }}€</div>
             </div>
         </div>
         <br>
