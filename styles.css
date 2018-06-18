@@ -196,3 +196,43 @@ hr {
     cursor: pointer;
     width: 14%;
 }
+
+.card-shop {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body-shop {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card-title-shop {
+    margin-bottom: 0.2rem;
+}
+
+.card-text-shop {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.card-price-shop {
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+}
+
+.img-shopCart {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+}
