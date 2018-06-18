@@ -7,6 +7,7 @@ angular.module('shopCart', [])
       },
       addArticle: function(article) {
         items.push(article);
+        enableBtn();
       },
       sum: function() {
         return items.reduce(function(total, article) {
@@ -25,20 +26,12 @@ angular.module('shopCart', [])
     $scope.cart = Cart;
   });
 
-  /*
-  Zum entfernen des "disabled"-Attribut
-  var text=$('.check-length').html();
-  text=text.trim();
-  var len=text.length;
-  //alert(text);
-  //alert(len);
+
+// Aktivieren des "Checkout"-Btn
+function enableBtn() {
+  $('.disabled-btn').prop("disabled", false);
+}
 
 
-  $(document).ready(function(){ 
-    if (len > 2) {
-     $('.disabled-btn').prop("disabled", false);
-    }
-  });
-  */
   
   
