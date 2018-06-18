@@ -1,8 +1,8 @@
 [
-    {"id": "1", "name": "Pizza Margherita", "price": 8},
-    {"id": "2", "name": "Pizza Salami",    "price": 8.50 },
-    {"id": "3", "name": "Pizza Thunfisch", "price": 9.5 },
-    {"id": "4", "name": "Mixed Salad", "price": 3.50},
-    {"id": "5", "name": "Salad with Cheese",    "price": 4.50 },
-    {"id": "6", "name": "Pizza with Dressing", "price": 5 }
+    {"id": "1", "name": "Pizza Margherita", "price": 8, "url": "beef-cheese-circle-262977.jpg" },
+    {"id": "2", "name": "Pizza Salami",    "price": 8.50, "url": "cheese-circle-close-up-803290.jpg" },
+    {"id": "3", "name": "Pizza Thunfisch", "price": 9.5, "url": "baked-beer-cheese-724216.jpg" },
+    {"id": "4", "name": "Mixed Salad", "price": 3.50, "url": "buffet-chicken-delicious-5916.jpg" },
+    {"id": "5", "name": "Salad with Cheese",    "price": 4.50, "url": "buffet-delicious-dinner-5928.jpg" },
+    {"id": "6", "name": "Pizza with Dressing", "price": 5, "url": "buffet-chicken-cooking-5938.jpg" }
 ]
