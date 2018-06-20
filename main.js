@@ -7,21 +7,8 @@ angular.module('shopCart', [])
         return items;
       },
       addArticle: function(article) {
-        if (items.includes(article)) {
-          mixedSalad = mixedSalad + 1;
-          document.getElementById("p1").innerHTML = mixedSalad;
-        } else {
           items.push(article);
           enableBtn();
-          var accounts = [];
-          document.getElementsByClassName("p1")[0].setAttribute("class", "democlass"); 
-          for (var i = 0; i < items.length; ++i) {
-            accounts[i] = items[i];
-            console.log(items);
-          }
-          // console.log(accounts);
-        }
-        
       },
       sum: function() {
         return items.reduce(function(total, article) {
