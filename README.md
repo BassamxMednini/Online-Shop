@@ -30,6 +30,6 @@ Warenkorb wurde nochmals optimiert. Animation wurde hinzugefügt.
 ![Animation](https://github.com/BassamxMednini/Online-Shop/blob/master/images/add_article_cart.gif?raw=true)
 
 ## Version 1.7
-Warenkorb erhielt einen neuen Anstrich verpasst. Bessere Übersicht, klare Strukturierung erkennbar und auch das Vorschaubild des jeweiligen Artikels ist nun zu sehen. Außerdem befindet sich unter dem Namen eine kleine Anmerkung zum Artikel. Weiterhin erkennt der Warenkorb nun, ob sich ein Artikel darin befindet oder nicht. Ist dies der Fall, aktiviert er den "Checkout"-Button. Ansonsten bleibt der Button deaktiviert.
+Warenkorb erhielt einen neuen Anstrich. Bessere Übersicht, klare Strukturierung erkennbar und auch das Vorschaubild des jeweiligen Artikels ist nun zu sehen. Außerdem befindet sich unter dem Namen eine kleine Anmerkung zum Artikel. Weiterhin erkennt der Warenkorb nun, ob sich ein Artikel darin befindet oder nicht. Ist dies der Fall, aktiviert er den "Checkout"-Button. Ansonsten bleibt der Button deaktiviert.
 
 ![Animation](https://github.com/BassamxMednini/Online-Shop/blob/master/images/version_1_7.gif?raw=true)
