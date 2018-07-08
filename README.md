@@ -1,4 +1,8 @@
-# Shopping Cart mit AngularJS
+# Warenkorb mit AngularJS
+Ein Warenkorb, der mit Hilfe von AngularJS ausgewählte Elemente, den jeweiligen Artikel- und Gesamtpreis sowie einige weitere Features anzeigt.
+
+## Installation
+Die ZIP-Datei herunterladen, entpacken lassen und anschließend über einen beliebigen Browser Ihrer Wahl die HTML-Datei öffnen. 
 
 ## Version 1.0
 Webseite größtenteils fertig aufgebaut. Lediglich die 3 Icons auf der rechten Seite der Navigation sind noch nicht funktionsbereit.
